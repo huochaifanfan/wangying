@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/white_top_bar"/>
+    <TextView style="@style/Text_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edite_layout_height"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="公司名称:"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/et_compain_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:hint="请输入公司名称"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/main_grey" />
+    </LinearLayout>
+    <!--联系方式-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edite_layout_height"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="联系方式:"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/main_grey" />
+    </LinearLayout>
+    <!--联系人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edite_layout_height"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="联系人:"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="28dp"
+            android:hint="请输入姓名"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/main_grey" />
+    </LinearLayout>
+    <!--其他说明-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他说明:"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/et_say"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:paddingBottom="@dimen/normal_margin"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/big_textSize"
+            android:textColorHint="@color/main_grey"
+            android:hint="请输入想说的话"
+            android:gravity="top"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/button_style"
+        android:background="@drawable/button_login_unenable"
+        android:text="提交申请"
+        android:layout_marginTop="21dp" />
+</LinearLayout>

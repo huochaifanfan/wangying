@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edite_layout_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="权限申请"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView style="@style/Text_divider"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_margin"
+        android:lineSpacingMultiplier="1.3"
+        android:textSize="@dimen/normal_textSize"
+        android:textColor="@color/title_color"
+        android:text="为了正常使用该功能，我们需要获取该权限，请手动授予该权限，否则你将不能正常使用该功能" />
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button_login"
+        android:text="确定"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/white_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

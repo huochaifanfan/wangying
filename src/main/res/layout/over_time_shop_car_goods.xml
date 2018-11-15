@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:text="失效宝贝"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/tv_clear"
+        android:textSize="@dimen/smasll_textSize"
+        android:background="@drawable/linear_background"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/main_grey"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:text="清空失效宝贝"
+        android:textSize="@dimen/smasll_textSize"
+        android:background="@drawable/linear_background"
+        android:textColor="@color/main_red"
+        android:layout_marginRight="@dimen/large_margin"
+        android:gravity="center" />
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="@dimen/normal_margin"/>
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_below="@+id/tv_title"
+        android:text="商品名称商品名称商品名称商品名称"
+        android:layout_toRightOf="@+id/image_icon"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/normal_textSize"
+        android:textColor="@color/main_grey" />
+    <TextView
+        android:id="@+id/tv_guige"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="规格：15X15"
+        android:textSize="@dimen/smasll_textSize"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/large_margin"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/image_icon"
+        android:layout_below="@+id/tv_goodsName"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:textColor="@color/main_grey"
+        android:layout_marginRight="19dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_guige"
+        android:layout_toRightOf="@+id/image_icon"
+        android:text="宝贝已不能购买，请联系卖家"
+        android:textSize="11sp"
+        android:textColor="@color/main_grey"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>

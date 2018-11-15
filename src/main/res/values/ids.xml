@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bannerContainer" type="id"/>
+    <item name="bannerViewPager" type="id"/>
+    <item name="circleIndicator" type="id"/>
+    <item name="numIndicator" type="id"/>
+    <item name="titleView" type="id"/>
+    <item name="bannerTitle" type="id"/>
+    <item name="numIndicatorInside" type="id"/>
+    <item name="indicatorInside" type="id"/>
+    <item name="bannerDefaultImage" type="id"/>
+
+
+
+    <item name="dynamic_id" type="id"/>
+    <item name="my_center_id" type="id"/>
+    <item name="detail_dialog" type="id"/>
+    <item name="classify_id" type="id"/>
+    <item name="address_id" type="id"/>
+    <item name="main_page_id" type="id"/>
+    <item name="good_list_detail" type="id"/>
+    <item name="main_classify_id" type="id"/>
+    <item name="fragment_classify_item" type="id"/>
+    <item name="classify_bottom" type="id"/>
+    <item name="top_id" type="id"/>
+    <item name="classify_right" type="id"/>
+    <item name="shop_id" type="id"/>
+    <item name="good_id" type="id"/>
+    <item name="phone_id" type="id"/>
+    <item name="order_manager" type="id"/>
+    <item name="order_id" type="id"/>
+</resources>

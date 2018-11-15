@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:id="@+id/shop_empty"
+    android:visibility="gone"
+    android:background="@color/white_color">
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="74dp"
+        android:src="@drawable/shop_car_empty"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.3"
+        android:text="你购物车内空空\n快去找自己喜欢的商品吧"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/title_color"
+        android:gravity="center"
+        android:layout_marginTop="35dp" />
+</LinearLayout>

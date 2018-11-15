@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="@color/main_red">
+    <ImageView style="@style/red_image_back"
+        android:id="@+id/imageView_back"/>
+    <LinearLayout
+        android:id="@+id/linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_toRightOf="@+id/imageView_back"
+        android:layout_toLeftOf="@+id/linear_location"
+        android:background="@drawable/search_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="搜索你想要的宝贝"
+            android:textSize="@dimen/normal_textSize"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/main_grey"
+            android:paddingLeft="@dimen/normal_margin"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/min_margin" />
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="10dp"
+            android:src="@drawable/main_search"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_location"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:layout_gravity="center"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/white_color" />
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="8dp"
+            android:src="@drawable/white_down_info"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/normal_margin" />
+    </LinearLayout>
+</RelativeLayout>

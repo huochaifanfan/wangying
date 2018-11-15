@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_image1"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:src="@drawable/image_default"
+        android:layout_height="70dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="6dp"
+        android:paddingBottom="9dp"
+        android:background="@drawable/classify_right_tuijian">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="商品名称"
+            android:paddingLeft="@dimen/min_margin"
+            android:paddingRight="@dimen/min_margin"
+            android:layout_marginBottom="8dp"
+            android:textSize="@dimen/normal_textSize"
+            android:textColor="@color/black_color"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_textSize"
+            android:textColor="@color/main_red"
+            android:text="0.00"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

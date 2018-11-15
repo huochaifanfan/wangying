@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="apkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/top_bar</item>
+        <item name="colorPrimaryDark">@color/top_bar</item>
+        <item name="colorAccent">#a9a9a9</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+    <style name="startApkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/top_bar</item>
+        <item name="colorPrimaryDark">@color/top_bar</item>
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+    </style>
+</resources>

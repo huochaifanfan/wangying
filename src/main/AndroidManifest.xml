@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wytianxiatuan.wytianxia">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--微信、支付宝所需要的权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--高德地图的权限-->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    <application
+        android:name="com.wytianxiatuan.wytianxia.application.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/apkTheme">
+        <!--7.0以上行为间文件共享-->
+        <provider
+            android:authorities="com.wytianxiatuan.wytianxia"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <!--支付宝相关-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!--以上是支付宝相关-->
+        <activity android:name=".view.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--欢迎页面-->
+        <activity android:name=".view.main.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startApkTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--h5页面-->
+        <activity android:name=".view.main.MainWebView"
+            android:screenOrientation="portrait"/>
+        <!--响应微信的回调-->
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:exported="true"/>
+        <!--我的优惠券-->
+        <activity android:name=".view.my.MyTicketActivity"
+            android:screenOrientation="portrait"/>
+        <!--选择,管理收货地址-->
+        <activity android:name=".view.my.SelectAddressActivity"
+            android:screenOrientation="portrait"/>
+        <!--添加收货地址-->
+        <activity android:name=".view.my.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+        <!--评价页面-->
+        <activity android:name=".view.my.QualityActivity"
+            android:screenOrientation="portrait"/>
+        <!--取消订单、申请售后-->
+        <activity android:name=".view.my.CancelOrderActivity"
+            android:screenOrientation="portrait"/>
+        <!--设置页面-->
+        <activity android:name=".view.setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <!--申请成为商家-->
+        <activity android:name=".view.my.ToBeSellerActivity"
+            android:screenOrientation="portrait"/>
+        <!--我的订单-->
+        <activity android:name=".view.my.MyOrderActivity"
+            android:screenOrientation="portrait"/>
+        <!--订单详情-->
+        <activity android:name=".view.my.MyOrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!--我的收藏-->
+        <activity android:name=".view.my.MyOrderCollectActivity"
+            android:screenOrientation="portrait"/>
+        <!--登录-->
+        <activity android:name=".view.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <!--绑定手机号-->
+        <activity android:name=".view.login.BindPhoneActivity"
+            android:screenOrientation="portrait"/>
+        <!--立即结算-->
+        <activity android:name=".view.shop.RightBuyActivity"
+            android:screenOrientation="portrait"/>
+        <!--确认付款-->
+        <activity android:name=".view.shop.PaySureActivity"
+            android:screenOrientation="portrait"/>
+        <!--搜索-->
+        <activity android:name=".view.main.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <!--商户的店铺-->
+        <activity android:name=".view.shop.MerchantShops"
+            android:screenOrientation="portrait"/>
+        <!--微信登录绑定手机号-->
+        <activity android:name=".view.login.WeiChatLoginActivity"
+            android:screenOrientation="portrait"/>
+        <!--选择城市-->
+        <activity android:name=".view.classify.CitySelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".city.Activity01"
+            android:screenOrientation="portrait"/>
+        <!--商品详情-->
+        <activity android:name=".view.classify.GoodsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!--商品列表-->
+        <activity android:name=".view.classify.GoodListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.setting.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.setting.SuggestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="ee667995bb8607d14f1bb32b4aabc585"/>
+        <service android:name="com.amap.api.location.APSService"></service>
+    </application>
+</manifest>

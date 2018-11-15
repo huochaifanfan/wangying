@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="@dimen/large_margin"
+    android:paddingRight="@dimen/large_margin"
+    android:id="@+id/rel_item"
+    android:background="@color/white_color">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王五"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/black_color"
+        android:layout_marginRight="23dp"/>
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15000****45"
+        android:textSize="@dimen/big_textSize"
+        android:layout_toRightOf="@+id/tv_name"
+        android:textColor="@color/black_color" />
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="北京 北京 朝阳区国粹苑1122朝阳区国粹苑1122朝阳区国粹苑1122"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/title_textSize"
+        android:layout_toLeftOf="@+id/image_edit"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/main_grey"
+        android:lineSpacingMultiplier="1.2" />
+    <ImageView
+        android:id="@+id/image_edit"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/address_edit"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

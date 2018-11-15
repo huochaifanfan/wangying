@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="18dp"
+    android:id="@+id/linear_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="@dimen/normal_margin"
+        android:paddingRight="@dimen/normal_margin"
+        android:text="网赢天下"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/normal_textSize"
+        android:textColor="@color/black_color"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

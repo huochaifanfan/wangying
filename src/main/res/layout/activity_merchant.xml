@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <TextView
+                android:id="@+id/text_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/shops_pic">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:paddingLeft="@dimen/large_margin"
+                    android:paddingRight="@dimen/large_margin"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/shop_picture"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="@dimen/normal_margin"
+                        android:src="@drawable/my_center_background"
+                        android:layout_gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/shop_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="网赢天下\n丝网商城"
+                        android:textSize="@dimen/big_textSize"
+                        android:textColor="@color/color_white"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/shop_fensi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="2222\n粉丝数"
+                        android:textSize="@dimen/smasll_textSize"
+                        android:visibility="gone"
+                        android:textColor="@color/color_white"
+                        android:layout_marginRight="@dimen/normal_margin"
+                        android:gravity="center_vertical" />
+                    <Button
+                        android:id="@+id/btn_collect"
+                        android:layout_width="60dp"
+                        android:layout_height="29dp"
+                        android:background="@drawable/button_login"
+                        android:layout_gravity="center_vertical"
+                        android:text="收藏"
+                        android:textSize="@dimen/big_textSize"
+                        android:textColor="@color/white_color" />
+                </LinearLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_red"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/top_bar_height"
+                        android:background="@color/main_red">
+                        <ImageView style="@style/red_image_back"
+                            android:id="@+id/imageView_back"/>
+                        <LinearLayout
+                            android:id="@+id/linear_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/large_margin"
+                            android:layout_marginRight="50dp"
+                            android:layout_toRightOf="@+id/imageView_back"
+                            android:layout_toLeftOf="@+id/linear_location"
+                            android:background="@drawable/search_background"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/et_search"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:hint="搜索你想要的宝贝"
+                                android:textSize="@dimen/normal_textSize"
+                                android:textColor="@color/black_color"
+                                android:textColorHint="@color/main_grey"
+                                android:paddingLeft="@dimen/normal_margin"
+                                android:gravity="center_vertical"
+                                android:layout_marginRight="@dimen/min_margin" />
+                            <ImageView
+                                android:id="@+id/image_search"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="10dp"
+                                android:src="@drawable/main_search"
+                                android:layout_gravity="center_vertical" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/viewPagerIndicator"
+            android:layout_width="match_parent"
+            android:background="@drawable/linear_background"
+            android:layout_height="39dp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

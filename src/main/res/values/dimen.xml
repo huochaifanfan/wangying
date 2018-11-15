@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_bar_textSize">16sp</dimen>
+    <dimen name="main_bottom_textSize">11sp</dimen>
+    <dimen name="smasll_textSize">12sp</dimen>
+    <dimen name="big_textSize">15sp</dimen>
+    <dimen name="normal_textSize">13sp</dimen>
+    <dimen name="left_margin">12dp</dimen>
+    <dimen name="right_margin">12dp</dimen>
+    <dimen name="large_margin">15dp</dimen>
+    <dimen name="min_margin">5dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="top_bar_height">44dp</dimen>
+    <dimen name="title_textSize">14sp</dimen>
+    <dimen name="edite_layout_height">54dp</dimen>
+</resources>

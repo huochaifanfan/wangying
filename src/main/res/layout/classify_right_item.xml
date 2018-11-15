@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="8dp">
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="推荐商品"
+        android:background="@color/white_color"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/black_color"
+        android:gravity="center_vertical" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white_color"
+        android:scrollbars="none"/>
+</LinearLayout>

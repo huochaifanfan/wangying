@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_red"/>
+    <include layout="@layout/text_search_layout"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/min_margin"
+        android:paddingRight="@dimen/min_margin"
+        android:layout_below="@+id/rel_search"
+        android:scrollbars="none" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:scrollbars="none"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:layout_below="@+id/viewPagerIndicator"
+        android:background="@color/background" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadmore="true"
+        app:srlEnableFooterFollowWhenLoadFinished="true"
+        android:layout_below="@+id/recyclerView"
+        app:srlEnableLoadmoreWhenContentNotFull="false">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:layout_below="@+id/recyclerView"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="102dp"
+            android:src="@drawable/icon_kong"
+            android:layout_marginTop="101dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无相关记录"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/title_color"
+            android:layout_marginTop="30dp"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

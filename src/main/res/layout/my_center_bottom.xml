@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="235dp"
+    android:orientation="vertical"
+    android:background="@color/white_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--我的收藏-->
+        <LinearLayout
+            android:id="@+id/linear_collect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/my_center_collect"
+                android:layout_marginBottom="@dimen/normal_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的收藏"
+                android:textSize="@dimen/smasll_textSize"
+                android:textColor="#333333" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+        <!--我的优惠券-->
+        <LinearLayout
+            android:id="@+id/linear_shanghu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:src="@drawable/shanghu"
+                android:layout_marginBottom="@dimen/normal_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请成为商户"
+                android:textSize="@dimen/smasll_textSize"
+                android:textColor="#333333" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView style="@style/Text_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!--收货地址-->
+        <LinearLayout
+            android:id="@+id/linear_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:src="@drawable/my_center_address"
+                android:layout_marginBottom="@dimen/normal_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货地址"
+                android:textSize="@dimen/smasll_textSize"
+                android:textColor="#333333" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+        <!--申请成为商户-->
+        <LinearLayout
+            android:id="@+id/linear_ticket"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/help_center"
+                android:layout_marginBottom="@dimen/normal_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帮助中心"
+                android:textSize="@dimen/smasll_textSize"
+                android:textColor="#333333" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp">
+    <!--待付款-->
+    <RelativeLayout
+        android:id="@+id/rel_wait_pay"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待付款"
+            android:textSize="@dimen/smasll_textSize"
+            android:textColor="@color/title_color"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+        <ImageView
+            android:id="@+id/image_wait_pay"
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:src="@drawable/wait_pay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/circel_number_background"
+            android:layout_toRightOf="@+id/image_wait_pay"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="-5dp"
+            android:text="5"
+            android:textSize="@dimen/smasll_textSize"
+            android:visibility="gone"
+            android:textColor="@color/main_red"
+            android:gravity="center" />
+    </RelativeLayout>
+    <!--待发货-->
+    <RelativeLayout
+        android:id="@+id/rel_delvider"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="待发货"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/smasll_textSize" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/wait_deliver" />
+    </RelativeLayout>
+    <!--待收货-->
+    <RelativeLayout
+        android:id="@+id/rel_shouhuo"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收货"
+            android:textSize="@dimen/smasll_textSize"
+            android:textColor="@color/title_color"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+        <ImageView
+            android:id="@+id/image_shouhuo"
+            android:layout_width="29dp"
+            android:layout_height="19dp"
+            android:src="@drawable/wait_pay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"/>
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/circel_number_background"
+            android:layout_toRightOf="@+id/image_shouhuo"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="-10dp"
+            android:text="2"
+            android:textSize="@dimen/smasll_textSize"
+            android:visibility="gone"
+            android:textColor="@color/main_red"
+            android:gravity="center" />
+    </RelativeLayout>
+    <!--退款售后-->
+    <RelativeLayout
+        android:id="@+id/rel_refund"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款/售后"
+            android:textSize="@dimen/smasll_textSize"
+            android:textColor="@color/title_color"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:src="@drawable/refund"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</LinearLayout>

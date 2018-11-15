@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:paddingLeft="@dimen/large_margin"
+    android:paddingRight="@dimen/large_margin"
+    android:paddingBottom="20dp"
+    android:background="@color/white_color">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="@dimen/normal_margin"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="商品名称"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/black_color"
+        android:layout_toRightOf="@+id/image_icon" />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥0.00"
+        android:layout_toRightOf="@+id/image_icon"
+        android:layout_below="@+id/tv_title"
+        android:textSize="@dimen/top_bar_textSize"
+        android:textColor="@color/black_color"
+        android:layout_marginTop="@dimen/normal_margin" />
+    <TextView
+        android:id="@+id/tv_miaosu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/black_color"
+        android:text="商品评分"
+        android:layout_below="@+id/image_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_des"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/image_icon"
+        android:layout_toRightOf="@+id/tv_miaosu"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/black_color"
+        android:layout_below="@+id/tv_miaosu"
+        android:text="评价描述"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/et_say"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_toRightOf="@+id/tv_des"
+        android:layout_below="@+id/recyclerView_des"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_background"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/black_color"
+        android:hint="请输入想说的话"
+        android:textColorHint="@color/hint_color"
+        android:gravity="top"
+        android:padding="@dimen/normal_margin" />
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/et_say"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_login"
+        android:text="提交"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/white_color" />
+</RelativeLayout>

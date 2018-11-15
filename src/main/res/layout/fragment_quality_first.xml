@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/white_color"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:orientation="vertical"
+            android:background="#66aaff">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/picture"
+                app:civ_border_width="2.5dp"
+                app:civ_border_color="@color/white_color" />
+            <TextView
+                android:id="@+id/tv_shopsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家名称"
+                android:textSize="@dimen/big_textSize"
+                android:textColor="@color/white_color"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_margin" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_say"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:background="@null"
+            android:paddingTop="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="@dimen/normal_margin"
+            android:hint="输入您想说的话"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/main_grey"
+            android:textColorHint="@color/main_grey"
+            android:gravity="top" />
+        <TextView style="@style/Text_divider"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <Button
+            android:id="@+id/btn_conmit"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_red_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/white_color"
+            android:text="提交" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

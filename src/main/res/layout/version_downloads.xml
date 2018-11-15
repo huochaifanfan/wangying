@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/top_bar_textSize"
+        android:textColor="@color/black_color"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:text="版本更新下载" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/min_margin"
+            android:text="正在更新,请稍候。。。"
+            android:textColor="@color/title_color"
+            android:layout_gravity="center"
+            android:textSize="@dimen/normal_textSize" />
+        <ProgressBar
+            android:id="@+id/customer_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="6dp"
+            android:progressDrawable="@drawable/progress_bar_background" />
+    </LinearLayout>
+</LinearLayout>

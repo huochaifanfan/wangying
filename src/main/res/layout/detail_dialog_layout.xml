@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="7dp"
+        android:text="颜色"
+        android:textSize="@dimen/smasll_textSize"
+        android:textColor="#a7a7a7" />
+    <include layout="@layout/recycler_view_layout"/>
+    <include layout="@layout/dialog_type2"/>
+</LinearLayout>

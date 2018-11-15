@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/normal_margin"
+    android:paddingBottom="@dimen/min_margin"
+    android:id="@+id/linear_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/my_center_background" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="护栏网"
+        android:textSize="@dimen/smasll_textSize"
+        android:textColor="@color/black_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/min_margin" />
+</LinearLayout>

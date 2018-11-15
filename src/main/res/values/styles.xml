@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/shop_check_image</item>
+        <item name="android:maxHeight">15dp</item>
+    </style>
+    <style name="apkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/top_bar</item>
+        <item name="colorPrimaryDark">@color/top_bar</item>
+        <item name="colorAccent">#a9a9a9</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+    </style>
+    <style name="Text_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#eeeeee</item>
+    </style>
+    <style name="startApkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/top_bar</item>
+        <item name="colorPrimaryDark">@color/top_bar</item>
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+    </style>
+    <!--顶部标题文字-->
+    <style name="red_top_bar_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/top_bar_textSize</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="red_image_back">
+        <item name="android:layout_width">33dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:padding">@dimen/normal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/min_margin</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/white_back_info</item>
+    </style>
+    <style name="black_image_back">
+        <item name="android:layout_width">29dp</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:padding">@dimen/normal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/min_margin</item>
+        <item name="android:src">@drawable/black_back_info</item>
+    </style>
+    <style name="mRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rate_star</item>
+        <item name="android:minHeight">19dp</item>
+        <item name="android:maxHeight">19dp</item>
+    </style>
+    <style name="button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/big_textSize</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+</resources>

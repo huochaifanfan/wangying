@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <include layout="@layout/good_detail_type1"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/background">
+            <TextView
+                android:id="@+id/tv_pingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="用户评价"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:textSize="@dimen/big_textSize"
+                android:textColor="@color/black_color"
+                android:layout_centerInParent="true"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_order_know"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="下单须知"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:textSize="@dimen/big_textSize"
+                android:textColor="@color/black_color"
+                android:layout_toRightOf="@+id/tv_pingjia"
+                android:layout_marginLeft="30dp"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="产品详情"
+                android:textSize="@dimen/big_textSize"
+                android:textColor="@color/main_red"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/top_bar_text_backgrouond"
+                android:layout_toLeftOf="@+id/tv_pingjia"
+                android:layout_centerInParent="true"
+                android:gravity="center" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

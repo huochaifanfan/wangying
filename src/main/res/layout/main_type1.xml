@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junliu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.wytianxiatuan.wytianxia.overrideview.banner.Banner
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        junliu:banner_layout="@layout/banner"
+        junliu:delay_time="5000"
+        junliu:image_scale_type="fit_xy"
+        junliu:indicator_drawable_selected="@drawable/banner_selected_dot"
+        junliu:indicator_drawable_unselected="@drawable/banner_unselected_dot"
+        junliu:indicator_height="4dp"
+        junliu:indicator_margin="4dp"
+        junliu:indicator_width="11dp"
+        junliu:is_auto_play="true"
+        junliu:scroll_time="600" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:background="@color/color_white">
+        <LinearLayout
+            android:id="@+id/linear_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/main_grey_background">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:src="@drawable/location"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="北京"
+            android:textSize="@dimen/big_textSize"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:layout_marginRight="5dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rel_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_grey_background"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/image_msg"
+            android:layout_marginRight="13dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_toRightOf="@+id/linear_location">
+            <TextView
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="15dp"
+                android:textColor="@color/hint_color"
+                android:text="搜索你想要的宝贝"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/normal_textSize"
+                android:layout_toLeftOf="@+id/image_search"
+                android:layout_marginRight="10dp"/>
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/main_search"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_msg"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/main_msg"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"/>
+</LinearLayout>

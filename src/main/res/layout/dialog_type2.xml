@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:visibility="gone"
+    android:id="@+id/linear_plus">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="7dp"
+        android:text="数量"
+        android:textSize="@dimen/smasll_textSize"
+        android:textColor="#a7a7a7" />
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:orientation="horizontal"
+        android:background="@drawable/detail_dialog_background">
+        <TextView
+            android:id="@+id/tv_minus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="—"
+            android:textSize="@dimen/title_textSize"
+            android:textColor="#a7a7a7"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="@dimen/title_textSize"
+            android:textColor="#a7a7a7"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+        <TextView
+            android:id="@+id/tv_plus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="@dimen/title_textSize"
+            android:textColor="#a7a7a7"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

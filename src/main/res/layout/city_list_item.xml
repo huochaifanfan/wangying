@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white_color">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:text="A"
+        android:visibility="gone"
+        android:textSize="@dimen/big_textSize"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/title_color"
+        android:background="@drawable/city_text_background"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/city_text_background"
+        android:text="安阳市"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/title_color"
+        android:gravity="center_vertical" />
+</LinearLayout>
+

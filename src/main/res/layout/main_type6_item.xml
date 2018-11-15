@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/min_margin"
+    android:id="@+id/linear_content"
+    android:background="@drawable/main_bottom_background"
+    android:paddingLeft="@dimen/min_margin"
+    android:paddingRight="@dimen/min_margin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上平名称"
+        android:textSize="@dimen/big_textSize"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp" />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥99.00"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="#ff0000"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

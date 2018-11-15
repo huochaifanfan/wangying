@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadmore="true"
+        app:srlEnableFooterFollowWhenLoadFinished="true"
+        app:srlEnableLoadmoreWhenContentNotFull="false">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="@color/main_red"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/main_red"
+        android:layout_below="@+id/tv_top"
+        android:text="网赢天下"
+        android:alpha="0"
+        android:textSize="@dimen/top_bar_textSize"
+        android:textColor="@color/white_color"
+        android:gravity="center" />
+</RelativeLayout>

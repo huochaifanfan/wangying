@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color">
+
+    <include layout="@layout/white_top_bar"/>
+    <TextView style="@style/Text_divider"/>
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/search_background"
+        android:focusable="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/rel_top"
+        android:focusableInTouchMode="true">
+        <com.renxue.myapplication.style.citylist.widget.CleanableEditView
+            android:id="@+id/cityInputText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请输入城市"
+            android:paddingLeft="15dp"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="14sp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/main_search"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+</LinearLayout>

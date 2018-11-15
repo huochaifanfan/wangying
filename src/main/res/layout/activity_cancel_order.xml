@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+    <include layout="@layout/white_top_bar"/>
+    <TextView style="@style/Text_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="联系电话："
+            android:textSize="@dimen/big_textSize"
+            android:textColor="#333333"
+            android:gravity="center_vertical" />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="@dimen/big_textSize"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="#333333"
+            android:text="150000000" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cancel_amount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="退款金额：￥0.00"
+        android:textSize="@dimen/big_textSize"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background"
+        android:textColor="#333333"
+        android:gravity="center_vertical" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="退款方式：原路退回"
+        android:textSize="@dimen/big_textSize"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/linear_background"
+        android:textColor="#333333"
+        android:gravity="center_vertical" />
+    <EditText
+        android:id="@+id/et_say"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:padding="@dimen/large_margin"
+        android:hint="请输入退款说明"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="#333333"
+        android:textColorHint="@color/hint_color"
+        android:gravity="top" />
+    <TextView android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#f4f5f9"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btn_conmit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/main_red"
+        android:text="提交申请"
+        android:textSize="@dimen/big_textSize"
+        android:textColor="@color/white_color" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="apkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/color_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#a9a9a9</item>
+    </style>
+</resources>

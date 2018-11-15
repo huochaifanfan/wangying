@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295dp"
+    android:layout_height="230dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edite_layout_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="狂退计算规则"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/black_color"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView style="@style/Text_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:layout_marginTop="29dp">
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/black_dot"
+            android:layout_marginRight="22dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="实退金额=应退总额-优惠券抵扣金额-运费-退款手续费"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/title_color" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/black_dot"
+            android:layout_marginRight="22dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="退款默认为运费不退"
+            android:textSize="@dimen/big_textSize"
+            android:textColor="@color/title_color" />
+    </LinearLayout>
+</LinearLayout>
